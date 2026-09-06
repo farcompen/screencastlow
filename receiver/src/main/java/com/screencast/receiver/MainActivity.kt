@@ -85,7 +85,7 @@ class ReceiverServer(
 
                 while (running) {
                     val socket = videoServer!!.accept()
-                    status("Telefon bağlandı: ${socket.inetAddress.hostAddress}")
+                    //status("Telefon bağlandı: ${socket.inetAddress.hostAddress}")
                     Thread({ H264Receiver(socket, surface.holder.surface, status, onVideoFormat).run() }, "VideoReceiver").start()
                 }
             } catch (e: Throwable) {
