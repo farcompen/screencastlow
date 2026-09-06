@@ -1,0 +1,7 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:padding="24dp">
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ScreenCast" android:textSize="30sp" android:textStyle="bold" />
+    <TextView android:id="@+id/status" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="TV aranıyor..." android:textSize="18sp" />
+    <ListView android:id="@+id/devices" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:layout_marginTop="16dp" />
+    <Button android:id="@+id/start" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="EKRANI YANSIT" />
+    <Button android:id="@+id/stop" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="DURDUR" android:enabled="false" />
+</LinearLayout>
