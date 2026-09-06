@@ -72,7 +72,7 @@ class ReceiverServer(
 
                 videoServer = ServerSocket(Protocol.VIDEO_PORT)
                 audioServer = ServerSocket(Protocol.AUDIO_PORT)
-                status("ScreenCast Receiver hazır\nTelefon bağlantısı bekleniyor...")
+                //status("ScreenCast Receiver hazır\nTelefon bağlantısı bekleniyor...")
 
                 Thread({
                     while (running) {
