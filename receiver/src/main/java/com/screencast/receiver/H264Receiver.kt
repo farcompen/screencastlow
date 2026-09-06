@@ -29,7 +29,7 @@ class H264Receiver(
                         val result = createVideoDecoder(data)
                         decoder = result.first
                         onVideoFormat(result.second.first, result.second.second)
-                        status("Yayın başladı")
+                        //status("Yayın başladı")
                     }
                     Protocol.TYPE_FRAME -> {
                         val d = decoder ?: continue
